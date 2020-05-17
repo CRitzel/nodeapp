@@ -4,6 +4,9 @@ node_js:
 services:
   - docker
 
+git:
+  submodules: false
+
 before_install:
 - docker pull critzel/test
 
@@ -11,4 +14,4 @@ before_script:
   - npm install -g gulp-cli
   
 script:
-  - bundle exec rake test
+  - echo 'Hello World!'
