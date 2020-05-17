@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Exemplo') {
             steps {
-                date
+                sh 'date'
                 echo 'Hello World!'
             }
         }
