@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('Exemplo') {
             steps {
-                users
+                sh 'users'
                 echo 'Hello World!'
                 sh 'echo customVar = $customVar'
             }
