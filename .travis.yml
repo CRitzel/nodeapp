@@ -8,10 +8,10 @@ git:
   submodules: false
 
 install:
-- docker run critzel/test
+- docker pull critzel/test
 
 before_script:
   - npm install -g gulp-cli
   
 script:
-  - echo $customVar
+  - echo 'Hello World!'
