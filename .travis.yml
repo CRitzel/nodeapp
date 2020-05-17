@@ -7,8 +7,8 @@ services:
 git:
   submodules: false
 
-before_install:
-- docker pull critzel/test
+install:
+- docker run critzel/test
 
 before_script:
   - npm install -g gulp-cli
