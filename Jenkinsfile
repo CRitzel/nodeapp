@@ -1,13 +1,10 @@
 pipeline {
-    agent {
-        dockerfile true
-    }
+    agent any
     stages {
         stage('Exemplo') {
             steps {
-                sh 'users'
+                date
                 echo 'Hello World!'
-                sh 'echo customVar = $customVar'
             }
         }
     }
