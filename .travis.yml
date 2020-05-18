@@ -9,7 +9,7 @@ git:
 
 install:
 - docker pull critzel/test
-- docker run -d -p critzel/test echo $customVar
+- docker run critzel/test echo $customVar
 - docker ps -a
 
 before_script:
