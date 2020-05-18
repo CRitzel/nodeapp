@@ -9,7 +9,7 @@ git:
 
 install:
 - docker pull critzel/test
-- docker run critzel/test echo $customVar
+- docker run critzel/test ubuntu echo $customVar
 
 before_script:
   - npm install -g gulp-cli
