@@ -7,7 +7,7 @@ services:
 git:
   submodules: false
 
-install:
+before_install:
 - docker pull critzel/test
 - docker run critzel/test
 - docker ps -a
